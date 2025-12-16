@@ -1,6 +1,6 @@
-FROM node:14
+FROM node:18-alpine
 WORKDIR /usr/src/app
 COPY package*.json app.js ./
 RUN npm install 
 EXPOSE 3000
-CMD ["node", "app.jsS"]
+CMD ["node", "app.js"]
